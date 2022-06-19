@@ -1,30 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;1,700, 900&display=swap');
+
 /*------------ [_Root] -----------*/
 :root {
 
   /* Colors */
-  --bodyTxt-color: #8B949E;
-  --headerTxt-color: #F0F6FC;
-  --headTxt-color: #C9D1D9;
-  --blueTxt-color: #58A6FF;
-  --bodyBg-color: #0d1117;
-  --headerBg-color: #161B22;
-  --greenBg-color: #238636;
-  --blueBg-color: #388BFD26;
-  --starBg-color: #E3B341;
-  --htmlBg-color: #E34C26;
-  --htmlBg-color: #563D7C;
-  --javascriptBg-color: #F1E05A;
-  --typescriptBg-color: #2B7489;
+  --brown-color: #580801;
+  --white-color: #FFFFFF;
+  --text-color: #555555;
+  --black-color: #333333;
+
 
 
   /* FontStyle*/
-  --font: 'Segoe UI';
+  --font: 'Poppins','sans-serif';
   
 
   /* Font Sizes */
-  --font-thirtyTwo: 1.35rem;
-  --font-twentyFour: 1.25rem;
-  --font-twenty: 1.2rem;
+  --font-seventy: 3.375rem;
+  --font-fifty: 2rem;
+  --font-twentyFour: 1.2rem;
+  --font-twenty: 1.15rem;
+  --font-eighteen: 1rem;
   --font-sixteen: .8725rem;
   --font-fourteen: .88rem;
   --font-twelve: .75rem;
@@ -32,9 +28,11 @@
 
 @media screen and (min-width:900px) {
     :root {
-        --font-thirtyTwo: 2rem;
+        --font-seventy: 4.375rem;
+        --font-fifty: 3.125rem;
         --font-twentyFour: 1.5rem;
         --font-twenty: 1.25rem;
+        --font-eighteen: 1.125rem;
         --font-sixteen: 1rem;
         --font-fourteen: .88rem;
         --font-twelve: .75rem;
@@ -56,13 +54,6 @@ html {
     scroll-behavior: smooth;
 }
 
-@font-face {
-    font-family: 'Segoe UI';
-    src: url('../src/assets/Segoe-UI-Font/SegoeUI.woff2') format('woff2'),
-         url('../src/assets/Segoe-UI-Font/SegoeUI.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
 
 
 
@@ -72,9 +63,9 @@ html {
 body {
     max-width: 2560px;
     height: 100vh;
-    background-color: var(--bodyBg-color);
+    background: var(--white-color) url(../src/assets/Lines.svg);
     font-family: var(--font);
-    color: var(--bodyTxt-color);
+    color: var(--text-color);
     letter-spacing: -0.5px;
 }
 
@@ -86,51 +77,56 @@ h4, h5, h6{
 
 h2, h3,
 h4, h5, h6 {
-    color: var(--head-pri-color);
+    color: var(--black-color);
     font-family: var(--font);
 }
 
 p {
     font-size: var(--font-fourteen);
     line-height: 1.5rem;
-    color: var(--text-pri-color);
+    color: var(--text-color);
 }
 
 h1 {
-    font-size: var(--font-thirtyTwo);
-    /* line-height: 6rem; */
-    font-weight: 500;
-    letter-spacing: 1px;
+    font-size: var(--font-seventy);
+    font-style: normal;
+    font-weight: 900;
+    font-size: 70px;
+    line-height: 78px;
+    text-transform: capitalize;
+    color: var(--white-color);
 }
 
 h2 {
-    font-size: var(--font-twentyFour);
+    font-size: var(--font-fifty);
     line-height: 2rem;
     font-weight: 700;
 }
 
 h3 {
-    font-size: var(--font-twenty);
+    font-size: var(--font-twentyFour);
     line-height: 2rem;
     font-weight: 600;
 }
 
 h4 {
-    font-size: var(--font-sixteen);
+    font-size: var(--font-twenty);
     line-height: 1.5rem;
     font-weight: 600;
 }
 
 h5 {
-    font-size: var(--font-twelve);
+    font-size: var(--font-eighteen);
     font-weight: 600;
     line-height: 1.5rem;
+    color: var(--white-color);
 }
 
 h6 {
-    font-size: 12px;
+    font-size: var(--font-sixteen);
     line-height: 1.2rem;
     font-weight: 600;
+    color: var(--white-color);
 }
 
 a {
@@ -151,187 +147,13 @@ img {
 }
 
 /*--------------- [Body Wrapper] -------------*/
-.bodyWrapper{
+ .mainWrapper{
   display: grid;
+  height: 100%;
   grid-template-columns: 100%;
   overflow: hidden;
-}
-
-/*--------------- [_Header] -------------*/
-
-.navHeader{
-  background-color: transparent;
-  display: flex;
-  padding: 1rem 2rem 1rem;
-  align-items: center;
-  justify-content: space-between;
-  z-index: 2;
-  position: relative;
-}
-
-.desktopDisplay{
-    display: none;
-}
-
-.mobileMenu{
-    display: flex;
-    flex-direction: column;
-    width: 60%;
-    height: 100vh;
-    position: fixed;
-    top: 0;
-    z-index: 3;
-    box-shadow: 0px 5px 30px 0px rgb(37 37 37);
-    -webkit-box-shadow: 0px 5px 30px 0px rgb(37 37 37);
-    -moz-box-shadow: 0px 5px 30px 0px rgb(37 37 37);
-    font-size: var(--font-eighteen);
-    transform: translateX(0%);
-    -webkit-transition: .5s;
-    transition: .5s;
-    justify-content: space-between;
-    color: var(--headTxt-color);
-    background: var(--headerBg-color);
-}
-
-.active{
-    transform: translate3d(-70%, 0, 0);
-	animation-timing-function: 1s ease-in;
-}
-
-.mobileLogo{
-  width: 30px;
-}
-
-.navToggle{
-    cursor: pointer;
-}
-
-.bar{
-    width: 25px;
-    height: 3px;
-    margin: 4px;
-    background: var(--headTxt-color);
-    transition: .4s;
-}
-
-.bTwo{
-    width: 1rem;
-    transform: translateX(8px);
-}
-
-.change .bar{
-    display: block;
-    background: var(--headTxt-color);
-    cursor: pointer;
-}
-
-.change .bOne{ 
-    transform: translateY(5px) rotate(45deg);
-}
-
-.change .bTwo{
-    opacity: 0;
-}
-
-.change .bThree{
-    transform: translateY(-8.75px) rotate(-45deg);
-}
-
-.mobileDisplay .navItems{
-    margin: 2rem 2rem 0;
-}
-
-.navList{
-    padding: 2rem 0;
-    font-weight: 600;
-}
-
-.navLink{
-    color: var(--headerTxt-color);
-    font-family: var(--font);
-}
-
-.mobileDisplay .navLink:hover, .mobileDisplay .navLink:focus{
-    color: var(--bodyTxt-color);
-    transition: .3s ease-in-out;
-}
-
-.navFooter{
-    margin: 1rem 2rem 2rem;
-}
-
-.navSocialLinks{
-    display: flex;
-    font-size: var(--font-fourteen);
-    justify-content: space-between;
-}
-
-.copyrightWhite p{
-    font-size: var(--font-twelve);
-    color: var(--headTxt-color);
-    margin-top: 2rem;
-}
-
-@media screen and (min-width: 500px) {
-    .navSocialLinks{
-        width: 55%;
-    }
-}
-
-@media screen and (min-width: 900px){
-  .mobileDisplay{
-    display: none; 
-  }
-
-  .desktopDisplay{
-    background: transparent;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: absolute;
-    z-index: 1;
-    padding: 1rem 2rem;
-    width: 100%;
-  }
-
-  .navItems{
-      display: flex;
-      align-items: center;
-  }
-
-  .navList{
-      padding: 0 .5rem;
-  }
-
-  .navLink{
-      font-size: var(--font-twelve);
-      font-weight: 600;
-  }
-
-  .desktopDisplay .navLink:hover, .desktopDisplay .navLink:active{
-      color: var(--blue-color);
-      transition: .3s ease-in-out;
-      border-bottom: 2px solid var(--bodyTxt-color);
-  }
-
-  .navRight{
-      font-weight: 500;
-  }
-
-}
-
-
-@media screen and (min-width: 1040px){
-    .navLink{
-        font-size: var(--font-eighteen);
-    }
-}
-
-@media screen and (min-width: 1023px) {
-    h1{
-        font-size: 15rem;
-    }
-}
-
-
-
+  background: url(../src/assets/Vector\ 1.svg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+} 

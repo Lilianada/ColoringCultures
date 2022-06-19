@@ -1,0 +1,19 @@
+.footerWrapper{
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.socialWrap{
+    display: flex;
+}
+
+.wrap{
+    color: var(--black-color);
+    background: var(--white-color);
+    padding: 1rem 1.25rem;
+    margin: 1rem;
+    border: 1px solid #DDDDDD;
+    box-shadow: 0px 4px 25px rgba(204, 204, 204, 0.4);
+    border-radius: 15px;
+}
