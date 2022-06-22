@@ -6,9 +6,9 @@ function Footer() {
   return (
     <footer className='footerWrapper'>
         <div className='socialWrap'>
-            <div className='wrap'><BsFacebook size={20} /></div>
-            <div className='wrap'><BsTwitter size={20} /></div>
-            <div className='wrap'><BsInstagram size={20} /></div>
+            <div className='wrap'><BsFacebook size={24} /></div>
+            <div className='wrap'><BsTwitter size={24} /></div>
+            <div className='wrap'><BsInstagram size={24} /></div>
         </div>
     </footer>
   )

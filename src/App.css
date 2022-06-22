@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;1,700, 900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&display=swap');
 
 /*------------ [_Root] -----------*/
 :root {
@@ -16,7 +16,7 @@
   
 
   /* Font Sizes */
-  --font-seventy: 3.375rem;
+  --font-seventy: 2.875rem;
   --font-fifty: 2rem;
   --font-twentyFour: 1.2rem;
   --font-twenty: 1.15rem;

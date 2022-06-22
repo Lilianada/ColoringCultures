@@ -1,21 +1,22 @@
 .heroWrapper{
-    width: 100%;
-    height: 100vh;
-    margin: 2rem 4rem;
+    /* width: 100%; */
+    height: 100%;
+    margin: 2rem;
 }
 
 .flexWrap{
     display: flex;
+    flex-direction: column;
 }
 
 .heroText{
-    width: 40%;
+    width: 100%;
 }
 
 .heroParagraph{
     color: var(--white-color);
     font-weight: 300;
-    width: 90%;
+    /* width: 90%; */
     margin-top: 1rem;
 }
 
@@ -24,19 +25,28 @@
 }
 
 .downloadButtons{
-    width: 404px;
+    max-width: 404px;
+    width: max-content;
+    height: max-content;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
-    padding: 1rem;
     background: var(--white-color);
     box-shadow: 0px 4px 40px rgba(204, 204, 204, 0.25);
     margin-top: 1rem;
+    margin-bottom: 2rem;
     border-radius: 5px;
+}
+
+.downloadButtons img{
+    padding: .75rem .5rem;
+    /* width: 200px; */
 }
 
 .heroImage{
     animation: bounce 3s both infinite ease-in-out;
     -webkit-animation: bounce 3s both infinte ease-in-out;
+    margin-top: 2rem;
 }
 
 @-webkit-keyframes bounce { 
@@ -44,11 +54,47 @@
     30%  { transform: translateY(-20px); }
     50%  { transform: translateY(0); }
     100% { transform: translateY(0); }
- } 
+} 
  
- @keyframes bounce { 
+@keyframes bounce { 
     0%   { transform: translateY(0); }
     30%  { transform: translateY(-20px); }
     50%  { transform: translateY(0); }
     100% { transform: translateY(0); }
+}
+
+@media screen and (min-width: 768px) {
+    .heroText{
+        width: 80%;
+    } 
+}
+
+ @media screen and (min-width: 900px) {
+    .heroWrapper{
+        width: 100%;
+        height: 100%;
+        margin: 2rem;
+    }
+
+    .flexWrap{
+        flex-direction: row;
+    }
+
+    .heroParagraph{
+        width: 90%;
+    }
+
+    .heroText{
+        width: 40%;
+    }
+
+    .downloadButtons{
+        width: 404px;
+        height: fit-content;
+        flex-direction: row;
+    }
+
+    .heroImage{
+        margin-top: 0;
+    }
  }

@@ -8,8 +8,8 @@ function Home() {
     <main className='mainWrapper'>
         <Header />
         <Hero />
-        <Footer />
     </main>
+    
   )
 }
 
