@@ -21,8 +21,8 @@ export default function Hero() {
             <h5>Download now</h5>
           </div>
           <div className='downloadButtons'>
-            <img src={GooglePlaystore} alt='download' />
-            <img src={AppleStore} alt='download' />
+            <a href='/'><img src={GooglePlaystore} alt='download' /></a>
+            <a href='/'><img src={AppleStore} alt='download' /></a>
           </div> 
         </article>
         <figure className='heroImage'>

@@ -90,7 +90,7 @@
 
     .downloadButtons{
         width: 404px;
-        height: fit-content;
+        height: 76px;
         flex-direction: row;
     }
 

@@ -1,12 +1,25 @@
 import './App.css';
-import Footer from './components/Footer/Footer';
-import Home from './pages/Home/Home';
+import {
+  BrowserRouter,
+  Routes,
+  Route,
+} from "react-router-dom";
+import Home from './pages/Home';
+import PrivacyPolicy from './pages/PrivacyPolicy';
+import TermsOfUse from './pages/TermsOfUse';
+import About from './pages/About';
 
 function App() {
   return (
     <div className="App">
-      <Home />
-      <Footer />
+      <BrowserRouter>
+        <Routes>
+            <Route index element={<Home />} />
+            <Route path="about" element={<About />}></Route>
+            <Route path="privacy-policy" element={<PrivacyPolicy />}></Route>
+            <Route path="terms-of-use" element={<TermsOfUse />}></Route>
+        </Routes>
+      </BrowserRouter>
   </div>
   );
 }

@@ -1,0 +1,55 @@
+.wrapper{
+    background: url(../../assets/Lines.svg) var(--white-color);
+    margin: 3rem;
+    padding: 3rem 2rem;
+    box-shadow: 0px 4px 4px rgba(204, 204, 204, 0.25);
+}
+
+.brownText {
+    color: #580801;
+}
+
+span{
+    font-weight: 600;
+}
+
+.paragraph{
+    margin-top: 2rem;
+}
+
+.para{
+    margin-top: 1rem;
+    margin-left: 1.5rem;
+}
+
+::marker{
+    font-size: 14px;
+}
+
+
+.downloadButtons{
+    max-width: 404px;
+    width: max-content;
+    height: max-content;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background: var(--white-color);
+    box-shadow: 0px 4px 4px rgba(204, 204, 204, 0.25);
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    border-radius: 5px;
+}
+
+.downloadButtons img{
+    padding: .75rem .5rem;
+    /* width: 200px; */
+}
+
+@media screen and (min-width: 900px) {
+    .downloadButtons{
+        width: 404px;
+        height: 76px;
+        flex-direction: row;
+    }
+}
