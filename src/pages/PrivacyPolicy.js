@@ -1,8 +1,17 @@
 import React from 'react';
+import Footer from '../components/Footer/Footer';
+import Header from '../components/Header/Header';
+import Privacy from '../components/PrivacyPolicy/Privacy';
 
 function PrivacyPolicy() {
   return (
-    <div>PrivacyPolicy</div>
+    <>
+      <main className='mainWrapper'>
+          <Header />
+      <Privacy />
+      </main>
+      <Footer />
+    </>
   )
 }
 
