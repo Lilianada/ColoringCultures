@@ -77,6 +77,18 @@
     margin-top: 1rem;
 }
 
+.subHead{
+    font-weight: 600;
+    margin-top: 1rem;
+}
+
 .lists{
     margin-left: 1.5rem;
+    margin-top: 1rem;
 }
+
+ul li{
+    list-style: disc !important;
+    font-size: var(--font-fourteen);
+}
+

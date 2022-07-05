@@ -119,14 +119,12 @@ h5 {
     font-size: var(--font-eighteen);
     font-weight: 600;
     line-height: 1.5rem;
-    color: var(--white-color);
 }
 
 h6 {
     font-size: var(--font-sixteen);
     line-height: 1.2rem;
     font-weight: 600;
-    color: var(--white-color);
 }
 
 a {
@@ -135,9 +133,6 @@ a {
     font-family: var(--font);
 }
 
-ul li {
-  list-style: none;
-}
 
 img {
   border: none;
