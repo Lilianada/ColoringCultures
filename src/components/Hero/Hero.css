@@ -16,12 +16,15 @@
 .heroParagraph{
     color: var(--white-color);
     font-weight: 300;
-    /* width: 90%; */
     margin-top: 1rem;
 }
 
 .downloadText{
     margin-top: 4rem;
+}
+
+.downloadText h5{
+    color: var(--white-color);
 }
 
 .downloadButtons{
@@ -40,7 +43,6 @@
 
 .downloadButtons img{
     padding: .75rem .5rem;
-    /* width: 200px; */
 }
 
 .heroImage{
@@ -63,13 +65,27 @@
     100% { transform: translateY(0); }
 }
 
+@media screen and (min-width: 280px) and (max-width: 500px) {
+    .downloadButtons{
+        max-width: 404px;
+        width: max-content;
+        height: max-content;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .downloadButtons img{
+        width: 200px;
+    }
+}
+
 @media screen and (min-width: 768px) {
     .heroText{
         width: 80%;
     } 
 }
 
- @media screen and (min-width: 900px) {
+@media screen and (min-width: 900px) {
     .heroWrapper{
         width: 100%;
         height: 100%;

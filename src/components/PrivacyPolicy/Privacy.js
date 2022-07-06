@@ -3,7 +3,7 @@ import './Privacy.css';
 
 function Privacy() {
   return (
-    <section className='wrapper'>
+    <section className='privacyWrapper'>
         <h2 className='brownText'>Privacy Policy</h2>
         <p className='paragraph'>
           This Privacy Policy describes Our policies and procedures on the collection, use and disclosure of Your information when You use the Service and tells You about Your privacy rights and how the law protects You. 
@@ -12,7 +12,7 @@ function Privacy() {
         <article className='accordion'>
             <div className='tab'>
                 <input type='checkbox' className='accordionTab' id='Tab1' />
-                <label for='Tab1' className='title'><h3>Intepretation and Definitions</h3></label>
+                <label htmlFor='Tab1' className='title'><h3>Intepretation and Definitions</h3></label>
                 <div className='content'>
                   <h4 className='head'>Interpretation</h4>
                     <p>
@@ -74,7 +74,7 @@ function Privacy() {
 
             <div className='tab'>
                 <input type='checkbox' className='accordionTab' id='Tab2' />
-                <label for='Tab2' className='title'><h3>Collecting and using your personal data</h3></label>
+                <label htmlFor='Tab2' className='title'><h3>Collecting and using your personal data</h3></label>
                 <div className='content'>
                   <h4 className='head'>Types of Data Collected</h4>
                   
@@ -155,9 +155,9 @@ function Privacy() {
 
                   <h5 className='subHead'>Transfer of Your Personal Data</h5>
                   <p>
-                  Your information, including Personal Data, is processed at the Company's operating offices and in any other places where the parties involved in the processing are located. It means that this information may be transferred to — and maintained on — computers located outside of Your state, province, country or other governmental jurisdiction where the data protection laws may differ than those from Your jurisdiction.
-                  <br/>Your consent to this Privacy Policy followed by Your submission of such information represents Your agreement to that transfer. 
-                  <br/>The Company will take all steps reasonably necessary to ensure that Your data is treated securely and in accordance with this Privacy Policy and no transfer of Your Personal Data will take place to an organization or a country unless there are adequate controls in place including the security of Your data and other personal information.
+                    Your information, including Personal Data, is processed at the Company's operating offices and in any other places where the parties involved in the processing are located. It means that this information may be transferred to — and maintained on — computers located outside of Your state, province, country or other governmental jurisdiction where the data protection laws may differ than those from Your jurisdiction.
+                    <br/>Your consent to this Privacy Policy followed by Your submission of such information represents Your agreement to that transfer. 
+                    <br/>The Company will take all steps reasonably necessary to ensure that Your data is treated securely and in accordance with this Privacy Policy and no transfer of Your Personal Data will take place to an organization or a country unless there are adequate controls in place including the security of Your data and other personal information.
                   </p>
                 </div>
             </div>

@@ -2,15 +2,14 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './Terms.css';
 
-
 function Terms() {
   return (
-    <section className='wrapper'>
+    <section className='termsWrapper'>
         <h2 className='brownText'>Terms Of Use</h2>
         <article className='accordion'>
             <div className='tab'>
                 <input type='checkbox' className='accordionTab' id='Tab1' />
-                <label for='Tab1' className='title'><h3>About these terms of use</h3></label>
+                <label htmlFor='Tab1' className='title'><h3>About these terms of use</h3></label>
                 <div className='content'>
                     <p>
                         These Terms of Use (“Terms”) is a legal agreement between you and Coloring Cultures,
@@ -47,7 +46,7 @@ function Terms() {
 
             <div className='tab'>
                 <input type='checkbox' className='accordionTab' id='Tab2' />
-                <label for='Tab2' className='title'><h3>Changes and Severability</h3></label>
+                <label htmlFor='Tab2' className='title'><h3>Changes and Severability</h3></label>
                 <div className='content'>
                     <p>
                         We reserve the right, at our discretion, to change, modify, add or remove portions of the
@@ -62,14 +61,13 @@ function Terms() {
                         If any portion of the Terms is deemed to be illegal or unenforceable, the remainder of
                         the Terms shall be unaffected and shall continue to be fully valid, binding, and
                         Enforceable.
-
                     </p>
                 </div>
             </div>
 
             <div className='tab'>
                 <input type='checkbox' className='accordionTab' id='Tab3' />
-                <label for='Tab3' className='title'><h3>Requirements to use</h3></label>
+                <label htmlFor='Tab3' className='title'><h3>Requirements to use</h3></label>
                 <div className='content'>
                     <p>
                         By installing, accessing or using our Services you confirm that you are at least 16 years
@@ -97,26 +95,25 @@ function Terms() {
                         Commercial Computer Software Restricted Rights clauses at FAR 52.227-19, as
                         applicable. Any download of our Apps and use of our Services shall be in compliance with all
                         relevant international, U.N., USA or EU sales, export or import restrictions and
-                        regulations and you agree to comply with them. You represent and warrant that 
-                        <ol type='i' className='lists'>
-                            <li>
-                                you are not located in a country that is subject to U.S. Government embargo, or that has been designated by the U.S. Government as a „terrorist supporting” country; and 
-                            </li>
-                            <li>
-                                you are not listed in any U.S. Government or EU sanction list of prohibited or restricted parties and you comply with relevant U.S. Government and EU sanctions and
-                                embargos; and
-                            </li>
-                            <li>
-                                you are solely responsible for compliance with all applicable laws, including without limitation export and import regulations, when using the Services.
-                            </li>
-                        </ol>
-                    </p>
+                        regulations and you agree to comply with them. You represent and warrant that </p>
+                    <ol type='i' className='lists'>
+                        <li>
+                            you are not located in a country that is subject to U.S. Government embargo, or that has been designated by the U.S. Government as a „terrorist supporting” country; and 
+                        </li>
+                        <li>
+                            you are not listed in any U.S. Government or EU sanction list of prohibited or restricted parties and you comply with relevant U.S. Government and EU sanctions and
+                            embargos; and
+                        </li>
+                        <li>
+                            you are solely responsible for compliance with all applicable laws, including without limitation export and import regulations, when using the Services.
+                        </li>
+                    </ol>
                 </div>
             </div>
 
             <div className='tab'>
                 <input type='checkbox' className='accordionTab' id='Tab4' />
-                <label for='Tab4' className='title'><h3>User Account</h3></label>
+                <label htmlFor='Tab4' className='title'><h3>User Account</h3></label>
                 <div className='content'>
                     <p>
                         To access or use features of some of our Services, you may be required to register by
@@ -150,7 +147,7 @@ function Terms() {
             
             <div className='tab'>
                 <input type='checkbox' className='accordionTab' id='Tab5' />
-                <label for='Tab5' className='title'><h3>Purchases in the services</h3></label>
+                <label htmlFor='Tab5' className='title'><h3>Purchases in the services</h3></label>
                 <div className='content'>
                     <p>
                         When you make in-app purchases (including purchases of Virtual Items in the
@@ -171,7 +168,7 @@ function Terms() {
 
             <div className='tab'>
                 <input type='checkbox' className='accordionTab' id='Tab6' />
-                <label for='Tab6' className='title'><h3>Virtual Items</h3></label>
+                <label htmlFor='Tab6' className='title'><h3>Virtual Items</h3></label>
                 <div className='content'>
                     <p>
                         In the course of using the Service you may win, earn or alternatively purchase with real
@@ -211,7 +208,7 @@ function Terms() {
 
             <div className='tab'>
                 <input type='checkbox' className='accordionTab' id='Tab7' />
-                <label for='Tab7' className='title'><h3>Ownership and License</h3></label>
+                <label htmlFor='Tab7' className='title'><h3>Ownership and License</h3></label>
                 <div className='content'>
                     <p>
                         Our Services are comprised of works and intellectual property owned by Coloring Cultures and/or its licensors, including, without limitation: games, titles, computer code,themes, objects, characters, stories, dialogue, artwork, graphics, images, animations,audio-visual effects, screen shots, text, sound, music, digitally downloadable files, trademarks, logos, product and character names, slogans, virtual currency and virtualitems and the compilation of the foregoing (“Content”). Under the Terms, we grant you a non-exclusive, personal, limited, revocable and non transferable license to use our Services, provided you agree to comply with the Terms. The Content in our Services are for gaming services and for your non-commercial enjoyment and entertainment. Any other use, including modification, reproduction, uploading, posting, transmission, distribution, sale, rent, lease, display, performance, broadcast, sublicense, assignment or other making available of any rights to the Content or any portions thereof to third parties in any form or by any means without our prior written permission, is strictly prohibited. You may not remove any proprietary notices or labels on the Content or use the Content in any unlawful or infringing manner. Any bypass, modification, defeat or circumvention of the Digital Rights Management solution (“DRM”) used for protection of the Content is strictly prohibited.You are not granted any other right, title or interest in our Services or any Content except as expressly provided herein. All other rights are reserved. Notwithstanding the Terms, the opensource software is licensed to you subject to the terms and conditions of the respective software license agreements accompanying such opensource software.
@@ -235,18 +232,18 @@ function Terms() {
                             sell, license or exploit the Services for any commercial purposes; and
                         </li>
                         <li>
-                        remove or destroy any copyright notices or other proprietary markings contained on or in the Services.
+                            remove or destroy any copyright notices or other proprietary markings contained on or in the Services.
                         </li>
-                        <p>
-                            if you have been found in violation of the terms, we reserve the right, in our sole discretion and at any time, to limit, suspend, modify or terminate access to services or any portion thereof. If this happens, coloring cultures is not required to compensate you for any losses or results. in addition, you may be found to be in violation of criminal and civil laws, including coloring culture’s intellectual property rights.
-                        </p>
                     </ol>
+                    <p>
+                        if you have been found in violation of the terms, we reserve the right, in our sole discretion and at any time, to limit, suspend, modify or terminate access to services or any portion thereof. If this happens, coloring cultures is not required to compensate you for any losses or results. in addition, you may be found to be in violation of criminal and civil laws, including coloring culture’s intellectual property rights.
+                    </p>
                 </div>
             </div>
 
             <div className='tab'>
                 <input type='checkbox' className='accordionTab' id='Tab8' />
-                <label for='Tab8' className='title'><h3>User Generated Content</h3></label>
+                <label htmlFor='Tab8' className='title'><h3>User Generated Content</h3></label>
                 <div className='content'>
                     <p>
                         On certain areas of the Services or otherwise, you may be able to chat with other users,
@@ -322,7 +319,7 @@ function Terms() {
 
             <div className='tab'>
                 <input type='checkbox' className='accordionTab' id='Tab9' />
-                <label for='Tab9' className='title'><h3>Ownership and license of UGC</h3></label>
+                <label htmlFor='Tab9' className='title'><h3>Ownership and license of UGC</h3></label>
                 <div className='content'>
                     <p>
                         After posting your UGC on or through the Services, you continue to retain all ownership rights in such UGC, and you continue to have the right to use your UGC in any way you choose, subject to the Terms and the license described herein (“UGC License”).
@@ -337,22 +334,22 @@ function Terms() {
                         <h4 className='head'>B. REPRESENTATIONS.</h4>
                         <p className='lists'>
                             You represent and warrant that: 
-                            <ol type='i' className='lists'>
-                                <li>
-                                    you solely own the UGC displayed, published or posted by you on or through the Services or otherwise have the right to grant the license set forth herein, and 
-                                </li>
-                                <li>
-                                    the displaying, publishing or posting of your UGC does not violate infringe on the rights of any third party, including any copyright, trademark, patent, trade secret or other intellectual property right, or the privacy rights, publicity rights, contract rights or any other rights of any person. You agree to pay for all royalties, fees, and any other monies owing any person by reason of any UGC displayed, published or posted by you to the Services. Except for your UGC, you may not edit, adapt, publish, reproduce, distribute, publicly display and use any UGC appearing on the Services.
-                                </li>
-                            </ol>
                         </p>
+                        <ol type='i' className='lists'>
+                            <li>
+                                you solely own the UGC displayed, published or posted by you on or through the Services or otherwise have the right to grant the license set forth herein, and 
+                            </li>
+                            <li>
+                                the displaying, publishing or posting of your UGC does not violate infringe on the rights of any third party, including any copyright, trademark, patent, trade secret or other intellectual property right, or the privacy rights, publicity rights, contract rights or any other rights of any person. You agree to pay for all royalties, fees, and any other monies owing any person by reason of any UGC displayed, published or posted by you to the Services. Except for your UGC, you may not edit, adapt, publish, reproduce, distribute, publicly display and use any UGC appearing on the Services.
+                            </li>
+                        </ol>
                     </div>
                 </div>
             </div>
 
             <div className='tab'>
                 <input type='checkbox' className='accordionTab' id='Tab10' />
-                <label for='Tab10' className='title'><h3>User Feedback</h3></label>
+                <label htmlFor='Tab10' className='title'><h3>User Feedback</h3></label>
                 <div className='content'>
                     <p>
                         You may, at your sole discretion, provide us with suggestions, comments or feedback with respect to the Services (collectively, “Feedback”). You represent and warrant that you shall not provide us with Feedback that contains Objectionable Content or infringes upon third party’s rights. If you provide Feedback to us, hereby assign to Coloring Cultures all rights in the Feedback and agree that Coloring Cultures shall have the right to use such Feedback and related information in any manner that it deems appropriate. Coloring Cultures will treat any Feedback you provide as non-confidential and non proprietary. To the extent allowed by applicable laws, you agree to waive any moral rights you may have in Feedback.
@@ -362,7 +359,7 @@ function Terms() {
 
             <div className='tab'>
                 <input type='checkbox' className='accordionTab' id='Tab11' />
-                <label for='Tab11' className='title'><h3>Link to third parties</h3></label>
+                <label htmlFor='Tab11' className='title'><h3>Link to third parties</h3></label>
                 <div className='content'>
                     <p>
                         Our Services may feature advertisements from third-party companies. Please review our <Link className='brownText' to='/privacy-policy'>Privacy Policy</Link> which explains what information we share with advertisers. We are not responsible for the availability of such websites or resources of the third parties, and we are not responsible or liable for any content, advertising, or services they provide. Any content, advertising or services by such third party are provided following the terms of services and privacy policies to be found on the website of the respective third party and, where applicable, you must familiarize yourself and accept the terms of services and privacy policies of such third party before using their services. Any separate charges or obligations you incur in your dealings with these third parties are your responsibility. Coloring Cultures is not liable for any claim relating to any content, goods or services, business practices or privacy policies of third parties, including for how they collect, use or share information they get from you.
@@ -372,7 +369,7 @@ function Terms() {
 
             <div className='tab'>
                 <input type='checkbox' className='accordionTab' id='Tab12' />
-                <label for='Tab12' className='title'><h3>Indemnification</h3></label>
+                <label htmlFor='Tab12' className='title'><h3>Indemnification</h3></label>
                 <div className='content'>
                     <p>
                         To the maximum extent permitted by the applicable law, you agree to defend, indemnify and hold coloring cultures, its directors, officers, employees, consultants, agents, commissionaires or licensors harmless from any and all third party claims, suits, losses, liability, damages costs and/or expenses (including, but not limited to, attorneys’ fees) arising from your or incurred as a result of your use of the services, or any kind of alleged or actual breach by you of the terms, or any infringement by you or any third party of any intellectual property rights or any other rights of other persons. you agree not to settle any matter without the prior written consent of coloring cultures.
@@ -381,7 +378,7 @@ function Terms() {
             </div>
             <div className='tab'>
                 <input type='checkbox' className='accordionTab' id='Tab13' />
-                <label for='Tab13' className='title'><h3>Warranty Disclaimer</h3></label>
+                <label htmlFor='Tab13' className='title'><h3>Warranty Disclaimer</h3></label>
                 <div className='content'>
                     <p>
                         The services are provided on an “as is” basis, with all faults and without a warranty of any kind. you use them at your sole risk and the entire risk as to satisfactory quality, performance, accuracy and effort is with you. To the maximum extent permitted by the applicable law, coloring cultures, on behalf of itself and any of its affiliates, licensors, distributors, third party suppliers and owners of the online stores, expressly disclaims any and all warranties, express or implied, statutory or otherwise, including, but not limited to the implied warranties of fitness for a particular purpose, merchantability, title, quality, accuracy, quiet enjoyment and non-infringement of third party rights, and any implied warranties arising from course of dealing or performance. Without limitation, coloring cultures makes no warranty that the services and the quality thereof will meet your requirements and expectations, that they will be uninterrupted, timely, correct, error-free, secure, that defects will be corrected or that the services are free of viruses or other harmful components. To the maximum extent permitted by the applicable law, we assume no liability or responsibility for any kind of property damage or losses arising from your use of our services, or due to any unauthorized access or other illegal actions by any third party, or due to any errors or omissions in any content, including any damage or losses because of use of any content.
@@ -390,7 +387,7 @@ function Terms() {
             </div>
             <div className='tab'>
                 <input type='checkbox' className='accordionTab' id='Tab14' />
-                <label for='Tab14' className='title'><h3>Limitations of Liability</h3></label>
+                <label htmlFor='Tab14' className='title'><h3>Limitations of Liability</h3></label>
                 <div className='content'>
                     <p>
                         Under no circumstances will coloring cultures or its directors, officers, employees, agents, commissionaires or licensors be liable for any loss or injury or any direct, indirect, incidental, special, reliance, consequential, exemplary or punitive damages, or any damages whatsoever (including, without limitation, damages for injury to person or property, for loss of business, revenue, profits, goodwill, business interruption, loss of business information, loss of privacy, failure to meet any duty or negligence) arising out of or in any way related to the use or inability to use the services, breach of contract, unauthorised access, tort, including negligence, or any other action by any third party, even if we or our authorised representative has been advised of the possibility of such damages. In no event shall our total cumulative liability arising from the terms or related to your use of the services, whether in contract or tort, exceed the amounts actually paid by you for using the services under the terms during the twelve months immediately preceding the date the claim first arose. The parties agree that the limitations of liability will apply even if any remedy specified in the terms is found to have failed of its essential purpose.
@@ -399,7 +396,7 @@ function Terms() {
             </div>
             <div className='tab'>
                 <input type='checkbox' className='accordionTab' id='Tab15' />
-                <label for='Tab15' className='title'><h3>Waiver of our rights</h3></label>
+                <label htmlFor='Tab15' className='title'><h3>Waiver of our rights</h3></label>
                 <div className='content'>
                     <p>
                         Our failure to exercise or enforce any of our rights under the Terms does not waive our right to enforce such right. Any waiver of such rights shall only be effective if it is in writing and signed by us.
@@ -408,7 +405,7 @@ function Terms() {
             </div>
             <div className='tab'>
                 <input type='checkbox' className='accordionTab' id='Tab16' />
-                <label for='Tab16' className='title'><h3>Terms, termination and survival</h3></label>
+                <label htmlFor='Tab16' className='title'><h3>Terms, termination and survival</h3></label>
                 <div className='content'>
                     <h4 className='head'>A. Term</h4>
                     <p>
@@ -443,7 +440,7 @@ function Terms() {
 
             <div className='tab'>
                 <input type='checkbox' className='accordionTab' id='Tab17' />
-                <label for='Tab17' className='title'><h3>Governing Law</h3></label>
+                <label htmlFor='Tab17' className='title'><h3>Governing Law</h3></label>
                 <div className='content'>
                     <p>
                         The provisions of the Terms shall be governed by and construed in accordance with the laws of the United States of America without reference to conflict of law rules and principles. The application of the United Nations Convention on Contracts for the International Sale of Goods (CISG) to the Terms is hereby expressly excluded.
@@ -453,7 +450,7 @@ function Terms() {
 
             <div className='tab'>
                 <input type='checkbox' className='accordionTab' id='Tab18' />
-                <label for='Tab18' className='title'><h3>Dispute resolution</h3></label>
+                <label htmlFor='Tab18' className='title'><h3>Dispute resolution</h3></label>
                 <div className='content'>
                     <p>
                         Most concerns can be solved quickly by contacting us at <span className='brownText'>info@coloringcultures.app</span>.  In the unlikely event that we cannot solve your concern within 30 (thirty) days, and you wish to bring legal action against us, then that dispute will be subject to the jurisdiction of the courts of the United States of America. By voluntarily accepting these Terms, you and Coloring Cultures both agree that the parties can only bring a claim against each other on an individual basis. To the maximum extent permitted by applicable law, neither you nor Coloring Cultures shall be entitled to consolidate, join or coordinate disputes by or against other individuals or entities, or participate in any collective or class action or litigation. In connection with any dispute, any and all such rights are hereby expressly and unconditionally waived.USA USERS Each party specifically waives any right to trial by jury in any court in connection with any action or litigation. Any claims under these terms shall proceed individually and no party shall join in a class action or other proceeding with or on behalf of the others.
@@ -463,7 +460,7 @@ function Terms() {
 
             <div className='tab'>
                 <input type='checkbox' className='accordionTab' id='Tab19' />
-                <label for='Tab19' className='title'><h3>Force Majure</h3></label>
+                <label htmlFor='Tab19' className='title'><h3>Force Majure</h3></label>
                 <div className='content'>
                     <p>
                         Neither you nor we will be liable for any failure to perform any obligation under the Terms or to provide access to Services of that failure is caused by the happening of any unforeseen event beyond your or our reasonable control, including without limitation, war, terrorism, riots, embargoes, Internet outages, network infrastructure failures, natural disasters, fire, flood or act of God.
@@ -473,7 +470,7 @@ function Terms() {
 
             <div className='tab'>
                 <input type='checkbox' className='accordionTab' id='Tab20' />
-                <label for='Tab20' className='title'><h3>Miscellaneous Terms</h3></label>
+                <label htmlFor='Tab20' className='title'><h3>Miscellaneous Terms</h3></label>
                 <div className='content'>
                     <h4 className='head'>A. Entire agreement</h4>
                     <p>

@@ -20,9 +20,9 @@ export default function Header () {
                 </nav>
             </div>
             <div className='mobileDisplay'>
-                <div className='logo'>
+                <Link className='logo' to='/'>
                     <img src={Logo} alt='Logo' />
-                </div>
+                </Link>
                 <div className='mobileMenu'>
                     <div className='navToggle'>
                         <div className='bar bOne'></div>
