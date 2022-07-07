@@ -10,11 +10,11 @@
 }
 
 .paragraph{
-    margin-top: 2rem;
+    margin-top: 1rem;
 }
 
 .accordion{
-    margin-top: 4rem;
+    margin-top: 3rem;
 }
 
 .tab{
@@ -79,6 +79,7 @@
     text-transform: uppercase;
     font-weight: 600;
     margin-top: 1rem;
+    margin-bottom: .75rem;
 }
 
 .subHead{
@@ -88,7 +89,7 @@
 
 .lists{
     margin-left: 1.5rem;
-    margin-top: 1rem;
+    margin-top: .75rem;
 }
 
 .lists li{
@@ -96,6 +97,13 @@
     font-size: var(--font-fourteen);
 }
 
+.subLists{
+    margin-left: 2rem;
+}
+
+.subSubLists{
+    margin-left: 2.5rem;
+}
 
 @media screen and (min-width: 700px) {
     .privacyWrapper{

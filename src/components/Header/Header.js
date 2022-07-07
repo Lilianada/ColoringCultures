@@ -15,7 +15,7 @@ export default function Header () {
                         <li className='navItem'><Link to="/about" className='navLink'>About</Link></li>
                         <li className='navItem'><Link to="/terms-of-use" className='navLink'>Terms Of Use</Link></li>
                         <li className='navItem'><Link to="/privacy-policy" className='navLink'>Privacy Policy</Link></li>
-                        <li className='navItem'><a href='/' className='navButton'>Contact Us</a></li>
+                        <li className='navItem'><a href='mailto:info@colorincultures.app' className='navButton'>Contact Us</a></li>
                     </ul>
                 </nav>
             </div>
