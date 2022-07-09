@@ -11,10 +11,7 @@ export default function Hero() {
         <article className='heroText'>
           <h1>Create your own art</h1>
           <p className='heroParagraph'>
-            Culture Colors is like no other color by number game! 
-            A coloring book app that celebrates urban culture, 
-            from inner-city to modern day art. An app that allows 
-            the user to become the artist of their favorite art pieces and genres.
+            Coloring Cultures is like no other color by number game! A coloring book app that celebrates urban culture, from inner-city to modern day art. An app that allows the user to become the artist of their favorite art pieces and genres.
           </p>
 
           <div className='downloadText'>
