@@ -15,7 +15,7 @@ export default function Header () {
                 </Link>
                 <nav className='navbar'>
                     <ul className='navList'>
-                        <li className='navItem'><Link to="/about" className='navLink'>About</Link></li>
+                        <li className='navItem'><Link to="/about" className='navLink'>About Us</Link></li>
                         <li className='navItem'><Link to="/terms-of-use" className='navLink'>Terms Of Use</Link></li>
                         <li className='navItem'><Link to="/privacy-policy" className='navLink'>Privacy Policy</Link></li>
                         <li className='navItem'><a href='mailto:info@colorincultures.app' className='navButton'>Contact Us</a></li>
@@ -35,10 +35,10 @@ export default function Header () {
                         <div className='bar bThree'></div>
                     </div>
                     
-                    {toggle && <nav className={toggle ? 'navbar' : "active"}>
+                    {toggle && <nav className={toggle ? 'navigation' : 'active'}>
                     
                             <ul className='navList'>
-                                <li className='navItem'><Link to="/about" className='navLink'>About</Link></li>
+                                <li className='navItem'><Link to="/about" className='navLink'>About Us</Link></li>
                                 <li className='navItem'><Link to="/terms-of-use" className='navLink'>Terms Of Use</Link></li>
                                 <li className='navItem'><Link to="/privacy-policy" className='navLink'>Privacy Policy</Link></li>
                                 <li className='navItem'><a href='mailto:info@colorincultures.app' className='navButton'>Contact Us</a></li>
