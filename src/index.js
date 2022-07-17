@@ -1,13 +1,11 @@
 import React, { lazy, Suspense } from 'react';
 import ReactDOM from 'react-dom/client';
-import Loading from './pages/Loading';
-// import App from './App';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 const App = lazy(() => import('./App'))
 root.render(
   <React.StrictMode>
-    <Suspense fallback={<Loading />}>
+    <Suspense style={{background: "url(../src/assets/Vector\ 1.svg)"}}>
           <App />
         </Suspense>
   </React.StrictMode>
