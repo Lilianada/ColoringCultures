@@ -6,7 +6,7 @@ function Footer() {
   return (
     <footer className='footerWrapper'>
         <div className='socialWrap'>
-            <a href='https://facebook.com' className='wrap'> <BsFacebook size={18} /> </a>
+            <a href='https://www.facebook.com/Coloring-Cultures-101762435951598/' className='wrap' target="_blank"> <BsFacebook size={18} /> </a>
             <a href='https://twitter.com' className='wrap'> <BsTwitter size={18} /> </a>
             <a href='https://instagram.com/culturecolors' className='wrap'> <BsInstagram size={18} /> </a>
         </div>
