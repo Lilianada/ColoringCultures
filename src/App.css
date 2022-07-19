@@ -9,11 +9,8 @@
   --text-color: #555555;
   --black-color: #333333;
 
-
-
   /* FontStyle*/
   --font: 'Poppins','sans-serif';
-  
 
   /* Font Sizes */
   --font-seventy: 2.875rem;
@@ -26,7 +23,7 @@
   --font-twelve: .75rem;
 }
 
-@media screen and (min-width:900px) {
+@media screen and (min-width: 900px) {
     :root {
         --font-seventy: 4.375rem;
         --font-fifty: 3.125rem;
@@ -84,7 +81,7 @@ h4, h5, h6 {
 p {
     font-size: var(--font-fourteen);
     line-height: 1.5rem;
-    color: var(--text-color);
+    color: var(--text-color); 
 }
 
 h1 {

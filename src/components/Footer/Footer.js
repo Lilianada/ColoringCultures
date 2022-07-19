@@ -10,6 +10,7 @@ function Footer() {
             <a href='https://twitter.com' className='wrap'> <BsTwitter size={18} /> </a>
             <a href='https://instagram.com/culturecolors' className='wrap'> <BsInstagram size={18} /> </a>
         </div>
+        
     </footer>
   )
 }

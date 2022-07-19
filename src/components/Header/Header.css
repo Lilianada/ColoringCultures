@@ -178,24 +178,22 @@ ul li {
         align-items: center;
     }
 
-    /* .navLink{
-        font-size: var(--font-twelve);
-        font-weight: 600;
-    } */
+    .navbar{
+        width: 60%;
+    }
 
 }
-
-/* 
+ 
 @media screen and (min-width: 1040px){
-    .navLink{
-        font-size: var(--font-eighteen);
+    .navbar{
+        width: 50%;
     }
 }
 
-@media screen and (min-width: 1023px) {
+/* @media screen and (min-width: 1023px) {
     h1{
         font-size: 15rem;
     }
-}
+} */
 
- */
+
