@@ -5,7 +5,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 const App = lazy(() => import('./App'))
 root.render(
   <React.StrictMode>
-    <Suspense style={{background: "url(../src/assets/Vector\ 1.svg)"}}>
+    <Suspense style={{background: "url(../src/assets/Vector 1.svg)"}}>
           <App />
         </Suspense>
   </React.StrictMode>
